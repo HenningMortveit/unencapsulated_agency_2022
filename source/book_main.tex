@@ -20,13 +20,109 @@
 %%
 \usepackage{xcolor}
 %%
+\usepackage{makeidx}
+%%
 \graphicspath{{./figures}}
 %%
+\makeindex
 %%
+%% ----------------------------------------------------------------------
 \begin{document}
 
 
-%%
+%% ----------------------------------------------------------------------
+\chapter{Outline}
+
+\section{Introduction}
+
+\begin{itemize}
+\item Overview of what the book is about;
+\item Relevance: for systems that are (or are in need of) being
+  analyzed nowadays (networked);
+\item Gap in the literature;
+\item Prepare list of related literature, e.g.,~\cite{Law:07}. This
+  may be somewhat tricky, so it may useful to state something about
+  what we choose to focus on while acknowledging examples that we do
+  not address (possible example: Petri Nets type work);
+\item Contrast with ``continuous'' modeling and analysis; make the
+  point that models that are ``continuous'' may also be part of what
+  we are covering;
+\item Book companion web site;
+\item Aspects that will help adoption for courses;
+\end{itemize}
+
+%% ----------------------------------------------------------------------
+\section{Examples of (real) systems}
+
+\begin{itemize}
+\item An example to be used throughout the book;
+\item NPS-1;
+\end{itemize}
+
+%% ----------------------------------------------------------------------
+\section{Formal modeling framework}
+
+\begin{itemize}
+\item Why?
+\item The ``implementation defines the model'' pitfall
+\item Graph dynamical systems
+  \begin{itemize}
+  \item Why GDS? As a minimum, provides a precise + conceptual
+    framework suited for modeling networked systems
+  \item Analysis types: mathematical, computational, numerical,
+    game-theoretic
+  \end{itemize}
+\item Validation and verification; sensitivity analysis;
+\end{itemize}
+
+%% ----------------------------------------------------------------------
+\section{Synthetic populations and digital twins}
+
+\begin{itemize}
+\item Why?
+\item Examples:
+\item How?
+\end{itemize}
+
+%% ----------------------------------------------------------------------
+\section{Unencapsulated Agency}
+
+\begin{itemize}
+\item Central idea; coordinate system(s);
+\item Examples;
+\item System factorization/decomposition; validity;
+\end{itemize}
+
+%% ----------------------------------------------------------------------
+\section{Architecture design}
+
+\index{architecture}
+
+\begin{itemize}
+\item What is it? Mapping models to software (aka modules);
+\item The fact that this is a non-trivial but central aspect;
+\item Construction of modules from system components;
+\item Coordinating architecture and module contracts; integration of metrics;
+\item Computing environment;
+\item Designing for scaling; (what does the scenario/application
+  require in terms of scale?)
+\item Data management; (e.g., communcation among modules; provenance)
+\item Scientific reproducibility;
+\item Verfication and validation; integration of tests within framework;
+\item System testing harnesses;
+\item SciDuct;
+\end{itemize}
+
+%% ----------------------------------------------------------------------
+\chapter{Introduction}
+
+Starts here ...
+
+
+%% ----------------------------------------------------------------------
 \bibliographystyle{plain}
 \bibliography{references}
+%% ----------------------------------------------------------------------
+\printindex
+%% ----------------------------------------------------------------------
 \end{document}
